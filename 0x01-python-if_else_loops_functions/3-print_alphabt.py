@@ -1,4 +1,21 @@
-#!/usr/bin/python3
-for i in range(ord('a'), ord('z') + 1):
-    if chr(i) != 'e' and chr(i) != 'q':
-        print('{:c}'.format(i), end='')
+#include <stdio.h>
+
+/**
+ * main - Prints the alphabet in lowercase, and then in uppercase.
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+	char letter;
+
+	for (letter = 'a'; letter <= 'z'; letter++)
+		putchar(letter);
+
+	for (letter = 'A'; letter <= 'Z'; letter++)
+		putchar(letter);
+
+	putchar('\n');
+
+	return (0);
+}
